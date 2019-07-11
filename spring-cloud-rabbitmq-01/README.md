@@ -1,12 +1,12 @@
-What am I doing here ? 
+##### What am I doing here ? 
 
-- Create a really simple hello world for spring-cloud-stream-rabbit. I use Groovy.
+- Create a really simple hello world for spring-cloud-stream-rabbit. I am using Groovy.
 
-#####Run rabbit mq in your local box first
+##### Run rabbit mq in your local box first
 
 `docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
 
-#####The POM 
+##### The POM 
 
  ```xml
 <properties>
@@ -53,7 +53,7 @@ What am I doing here ?
 	</dependencyManagement>
 ```
 
-#####The code
+##### The code
 
 ```groovy
 @ToString(includeNames = true)
@@ -90,7 +90,7 @@ class MyLoggerServiceApplication {
     }
 }
 ```
-#####What does the rabbit configuration look like ?
+##### What does the rabbit configuration look like ?
 
 - Rabbit set up an exchange called input. The type of the exchange is topic.
 
@@ -101,7 +101,7 @@ There was a binding created to queue  `input.anonymous.gvhfdHVFT6OLl0CA58yVMw` w
 ![Alt text](queue.png?raw=true)
 
 
-#####How do I test this ?
+##### How do I test this ?
 
 - Go to Rabbit console at `http://localhost:15672` and user name and password `guest` and `guest`. Click on
 Exchanges -> input as Publish message as shown below.
