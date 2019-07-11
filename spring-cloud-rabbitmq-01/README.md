@@ -90,13 +90,13 @@ class MyLoggerServiceApplication {
     }
 }
 ```
-##### What does the rabbit configuration look like ?
+##### What does the rabbit configuration automatically set up by spring cloud look like ?
 
 - Rabbit set up an exchange called input. The type of the exchange is topic.
 
 ![Alt text](exchange.png?raw=true)
  
-There was a binding created to queue  `input.anonymous.gvhfdHVFT6OLl0CA58yVMw` with a routing key #
+- There was a binding created to queue  `input.anonymous.gvhfdHVFT6OLl0CA58yVMw` with a routing key #
 
 ![Alt text](queue.png?raw=true)
 
