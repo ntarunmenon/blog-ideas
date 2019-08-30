@@ -92,6 +92,13 @@ class MyLoggerServiceApplication {
 ```
 ##### What does the rabbit configuration automatically set up by spring cloud look like ?
 
+Start the rabbit console
+
+http://localhost:15672/#/
+admin
+admin
+
+
 - Rabbit set up an exchange called input. The type of the exchange is topic.
 
 ![Alt text](exchange.png?raw=true)
